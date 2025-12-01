@@ -21,6 +21,22 @@ The pipeline consists of the following agents powered by **Google Gemini 2.0 Fla
 4.  **DevOps Agent**: Creates deployment configurations (Docker, CI/CD).
 5.  **Reviewer Agent**: Critiques the generated code. If issues are found, the Refactorer fixes them in a feedback loop.
 
+### 📊 Workflow Diagram
+
+```mermaid
+graph TD
+    User([User]) -->|Uploads .ipynb| Parser[Parser Agent]
+    Parser -->|Extracts Code & Context| Architect[Architect Agent]
+    Architect -->|Designs Structure| Refactorer[Refactorer Agent]
+    Refactorer -->|Generates Code| DevOps[DevOps Agent]
+    DevOps -->|Adds Config| Reviewer[Reviewer Agent]
+    Reviewer -->|Review| Decision{Approved?}
+    Decision -->|Yes| Output([Output.zip])
+    Decision -->|No| Feedback[Feedback Loop]
+    Feedback -->|Refines Code| Refactorer
+    Output -->|Download| User
+```
+
 ## 🚀 Getting Started
 
 ### Prerequisites
