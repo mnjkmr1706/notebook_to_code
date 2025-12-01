@@ -70,7 +70,7 @@ graph TD
 Run the Streamlit application:
 
 ```bash
-streamlit run app.py
+uv run streamlit run app.py
 ```
 
 1.  Open the app in your browser (usually `http://localhost:8501`).
