@@ -1,8 +1,0 @@
-Metadata-Version: 2.4
-Name: ml-pipeline
-Version: 0.1.0
-Summary: A simple ML pipeline for logistic regression
-Author: Author
-Requires-Dist: pandas
-Requires-Dist: scikit-learn
-Requires-Dist: streamlit>=1.51.0

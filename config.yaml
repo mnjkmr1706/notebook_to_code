@@ -1,8 +1,0 @@
-features:
-  - feature1
-  - feature2
-target: target
-test_size: 0.2
-random_state: 42
-model_params:
-  random_state: 42
