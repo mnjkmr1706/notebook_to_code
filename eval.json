@@ -1,0 +1,18 @@
+{
+  "safety_v1": {
+    "score": 0.0,
+    "reason": "Failed to parse LLM response. Raw: "
+  },
+  "hallucinations_v1": {
+    "score": 0.0,
+    "reason": "Failed to parse LLM response. Raw: "
+  },
+  "response_match_score": {
+    "score": 0.0,
+    "reason": "Failed to parse LLM response. Raw: "
+  },
+  "final_response_match_v2": {
+    "score": 0.0,
+    "reason": "Failed to parse LLM response. Raw: "
+  }
+}
